@@ -22,7 +22,7 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #f9f9f9;
-    flex-wrap: wrap; /* Allow items to wrap */
+    flex-wrap: wrap; 
     background: hsl(319, 51%, 28%);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
   }
@@ -31,11 +31,10 @@
   .staff-card img {
     border-radius: 8px;
     width: 100%;
-    max-width: 350px; /* Increase image size */
+    max-width: 350px; 
     height: auto;
   }
   
-  /* Adjustments for text and image containers */
   .staff-card h3 {
     font-size: 1.5rem;
     margin-top: 0;
@@ -50,40 +49,39 @@
     color: #fff;
   }
   
-  /* Image and text position alternation */
   .staff-card:nth-child(odd) {
     flex-direction: row; 
   }
   
   .staff-card:nth-child(even) {
-    flex-direction: row-reverse; /* Image on the right, text on the left */
+    flex-direction: row-reverse; 
   }
   
-  /* Image container is larger than text container */
+
   .staff-card > img {
-    flex: 2; /* Image takes twice the space of the text container */
+    flex: 2; 
   }
   
   .staff-card > div {
-    flex: 1; /* Text takes half the space of the image container */
+    flex: 1; 
   }
   
   /* Small screen layout (max-width: 768px) */
   @media (max-width: 768px) {
     .staff-card {
-      flex-direction: column; /* Stack image and text vertically on smaller screens */
+      flex-direction: column; 
       gap: 20px;
       padding: 15px;
     }
   
     .staff-card img {
-      width: 100%; /* Image should scale down to fit container */
-      max-width: 100%; /* Ensure image doesn't overflow */
-      height: auto; /* Keep the image's aspect ratio */
+      width: 100%;
+      max-width: 100%; 
+      height: auto; 
     }
   
     .staff-card > div {
-      width: 100%; /* Make text container take full width */
+      width: 100%;
       padding: 10px;
     }
   
@@ -100,7 +98,6 @@
   
     .staff-card p {
       font-size: 1.2rem; 
-      /* Adjust paragraph font size for readability */
     }
   }
   

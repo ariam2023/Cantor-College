@@ -1,7 +1,7 @@
 /* Footer styling */
 .footer-banner {
-    background-color: #333; /* Dark background */
-    color: #fff; /* White text color */
+    background-color: #333; 
+    color: #fff; 
     padding: 20px;
     text-align: center;
     height: 150px;
@@ -12,8 +12,8 @@
     display: flex;
     flex-direction: column;
    
-    justify-content: center; /* Center links */
-    gap: 20px; /* Space between the links */
+    justify-content: center; 
+    gap: 20px; 
   }
   
   .footer-links li {
@@ -27,7 +27,7 @@
   }
   
   .footer-links li a:hover {
-    color: #f44336; /* Change color on hover */
+    color: #f44336; 
   }
 
   .footer-datetime{
@@ -37,22 +37,21 @@
   /* Media Queries for responsiveness */
   @media (max-width: 768px) {
     .footer-links {
-      flex-direction: column; /* Stack links vertically on smaller screens */
-      gap: 10px; /* Reduce gap between stacked items */
+      flex-direction: column; 
+      gap: 10px; 
     }
   
     .footer-links li a {
-      font-size: 20px; /* Slightly smaller font size on mobile */
+      font-size: 20px; 
     }
   }
   
   @media (max-width: 480px) {
     .footer-banner {
-      padding: 15px; /* Adjust padding for smaller screens */
-    }
+      padding: 15px; 
   
     .footer-links li a {
-      font-size: 12px; /* Even smaller font size on very small screens */
+      font-size: 12px; 
     }
   }
-  
+}

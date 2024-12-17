@@ -1,5 +1,5 @@
 import Image from "next/image";
-import "./staff.css"; // Import the CSS file
+import "./staff.css"; 
 
 const Staff = () => {
   const staffData = [

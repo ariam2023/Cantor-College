@@ -1,6 +1,6 @@
 /* General Container Styling */
 .partners-container {
-    margin: 120px 20px 0; /* Adjusted margin for cleaner spacing */
+    margin: 120px 20px 0; 
     padding: 0 20px;
 }
 
@@ -47,7 +47,6 @@
 .contact-form {
     display: flex;
     flex-direction: column;
-    /* background: #333; */
     background: hsl(319, 51%, 28%);
     padding: 2rem;
     border-radius: 12px;
@@ -60,16 +59,14 @@
 .message-area textarea {
     width: 100%;
     padding: 15px;
-    /* background-color: #444; */
     color: #000;
     border: none;
     border-radius: 8px;
-    resize: vertical; /* Allow only vertical resizing */
+    resize: vertical; 
     font-size: 1rem;
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-/* Input Fields */
 .form-input {
     display: flex;
     flex-direction: column;
@@ -97,7 +94,6 @@
     margin-bottom: 1.2rem;
     border: none;
     border-radius: 8px;
-    /* background-color: #444; */
     color: #000;
     font-size: 1rem;
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -109,7 +105,6 @@
     outline: 2px solid #f44336;
 }
 
-/* Submit Button */
 .contact-form button {
     padding: 12px;
     font-size: 1.1rem;
@@ -127,7 +122,6 @@
     transform: translateY(-2px);
 }
 
-/* Responsive Styling */
 @media (max-width: 768px) {
     .contact-container {
         width: 95%;

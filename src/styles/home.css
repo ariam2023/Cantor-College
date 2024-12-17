@@ -20,7 +20,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  z-index: 2; /* Ensure the text is above the overlay */
+  z-index: 2; 
 }
 
 .text-box h1 {
@@ -124,16 +124,16 @@
 /* Location Section */
 .location-container {
   display: flex;
-  gap: 20px; /* Consistent spacing between items */
+  gap: 20px; 
   flex-direction: row;
-  justify-content: space-between; /* Space out items evenly */
-  align-items: stretch; /* Align items to stretch to the same height */
+  justify-content: space-between; 
+  align-items: stretch; 
   width: 100%;
   margin-top: 20px;
   padding: 20px;
   background-color: #f9f9f9; 
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for styling */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 
@@ -171,19 +171,18 @@
 
 /* Map Section */
 .location-map {
-  flex: 1; /* Ensures equal width with address section */
+  flex: 1; 
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
   overflow: hidden;
-  background-color: #f4f4f4; /* Optional background for map section */
-}
+  background-color: #f4f4f4; 
 
 .location-map img {
   width: 100%;
   height: auto;
-  object-fit: cover; /* Ensures the image fills the container properly */
+  object-fit: cover; 
   display: block;
 }
 .address-container{
@@ -194,7 +193,7 @@
 .address-container  address {
   font-style: normal;  
   color: #fff;
-  /* Ensure text inside <address> is not italicized */
+  
 }
 
 .address-container span{
@@ -239,4 +238,5 @@
       max-width: 100%; 
     }
   
+}
 }

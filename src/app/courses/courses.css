@@ -1,4 +1,3 @@
-/* General Styles */
 
   .course-container h2 {
     text-align: center;
@@ -7,19 +6,19 @@
     color: #333;
   }
   
-  /* Course List Container */
+
   .course-list {
     display: grid;
-    gap: 15px; /* Adjusted spacing between items */
-    grid-template-columns: repeat(3, 1fr); /* Three columns on larger screens */
+    gap: 15px; 
+    grid-template-columns: repeat(3, 1fr); 
     margin-top: 20px;
     padding: 20px;
     position: relative;
-    overflow: hidden; /* Prevent overflow of scaled items */
+    overflow: hidden; 
     transition: all 0.3s ease;
   }
   
-  /* Course Item Styling */
+  
   .course-item {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
@@ -32,7 +31,7 @@
   }
  
   
-  /* Course Image */
+  
   .course-image img {
     width: 100%;
     height: auto;
@@ -40,17 +39,17 @@
     border-radius: 8px;
   }
   
-  /* Course Title */
+ 
   .course-item h3 {
     margin: 15px 0 10px;
     font-size: 24px;
     color: #fff;
   }
   
-  /* Course Details */
+ 
   .course-details {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns for details */
+    grid-template-columns: repeat(3, 1fr); 
     gap: 10px;
     text-align: left;
     margin-top: 10px;
@@ -71,21 +70,21 @@
   /* Responsive Design */
   @media (max-width: 1024px) {
     .course-list {
-      grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+      grid-template-columns: repeat(2, 1fr); 
     }
   
     .course-details {
-      grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+      grid-template-columns: repeat(2, 1fr);
     }
   }
   
   @media (max-width: 768px) {
     .course-list {
-      grid-template-columns: 1fr; /* Single column on mobile */
+      grid-template-columns: 1fr; 
     }
   
     .course-details {
-      grid-template-columns: 1fr; /* Single column for mobile */
+      grid-template-columns: 1fr; 
     }
   }
   

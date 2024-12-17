@@ -3,7 +3,6 @@ import { useState } from 'react';
 import './partners.css'; 
 
 const Partners = () => {
-    // State to manage form input values and errors
     const [formData, setFormData] = useState({
         fname: '',
         lname: '',
@@ -12,8 +11,6 @@ const Partners = () => {
     });
 
     const [errorMessage, setErrorMessage] = useState('');
-
-    // Handle form input changes
     const handleChange = (e) => {
         const { id, value } = e.target; 
         setFormData({
@@ -22,20 +19,17 @@ const Partners = () => {
         });
     };
 
-    // Validate email format
     const validateEmail = (email) => {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailRegex.test(email);
     };
 
-    // Handle form submission
     const handleSubmit = (e) => {
         e.preventDefault();
-        setErrorMessage(''); // Reset any previous error messages
+        setErrorMessage(''); 
 
         const { fname, lname, email, message } = formData;
 
-        // Validation rules
         if (fname.trim() === '') {
             setErrorMessage('First Name is required.');
             return;
@@ -56,10 +50,8 @@ const Partners = () => {
         // Save to localStorage
         localStorage.setItem('partnersFormData', JSON.stringify(formData));
 
-        // Success message or any additional logic
         setErrorMessage('Form submitted successfully! Thank you for reaching out.');
         
-        // Reset form fields
         setFormData({ fname: '', lname: '', email: '', message: '' });
     };
     return (

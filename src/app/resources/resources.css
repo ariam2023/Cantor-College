@@ -1,0 +1,13 @@
+.resources-container{
+    margin: 120px 20px 0px 20px;
+    padding-bottom: 10px;
+    line-height: 1.6;
+}
+.resources-container p{
+    font-size: 1.2rem;
+    text-align:  justify;
+}
+
+.resources-container ol{
+    margin: 5px 20px;  
+}

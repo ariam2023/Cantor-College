@@ -1,0 +1,115 @@
+.facility-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .facility-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+
+  .facility-container p{
+    text-align: justify;
+    font-size: 1.2rem;
+  }
+
+  .facility-container h3{
+    font-size: 1.5rem;
+    margin: 20px 0;
+  }
+
+  .student-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease-in-out;
+    flex-wrap: wrap; 
+    background: hsl(319, 51%, 28%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+
+  }
+
+  .student-card img {
+    border-radius: 8px;
+    width: 100%;
+    max-width: 450px; 
+    height: auto;
+  }
+
+  /* Adjustments for text and image containers */
+  .student-card h3 {
+    font-size: 1.3rem;
+    margin-top: 0;
+    color: #fff;
+  }
+
+  .student-card p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #fff;
+  }
+
+  /* Image and text position alternation */
+  .student-card:nth-child(odd){
+    flex-direction: row; /* Image on the left, text on the right */
+  }
+
+  .student-card:nth-child(even) {
+    flex-direction: row-reverse; /* Image on the right, text on the left */
+  }
+
+  /*Image container is larger than text container */
+  .student-card > div > img {
+    flex: 2; 
+  }
+ 
+  .student-card > div {
+    flex: 1; 
+  }
+
+   /* Small screen layout (max-width: 768px) */
+   @media (max-width: 768px) {
+        .student-card{
+            flex-direction: column; 
+            gap: 20px;
+            padding: 15px;
+      }
+
+      .student-card img {
+            width: 100%; /* Image should scale down to fit container */
+            max-width: 100%; /* Ensure image doesn't overflow */
+            height: auto; /* Keep the image's aspect ratio */
+      }
+
+      .student-card > div{
+            width: 100%; /* Make text container take full width */
+            padding: 10px;
+      }
+
+      .facility-container h2 {
+            font-size: 1.75rem;
+            margin-bottom: 10px;
+      }
+
+      .facility-container h3,
+      .student-card h3 {
+        font-size: 1.3rem; /* Adjust header font size for smaller screens */
+      }
+      .student-card h3 {
+        text-decoration: underline;
+      }
+
+      .student-card p {
+        font-size: 1.2rem; 
+      }
+   }
+  

@@ -1,0 +1,121 @@
+/* staff.css */
+.staff-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .staff-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 120px;
+    margin-bottom: 20px;
+  }
+  
+  .staff-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    flex-wrap: wrap; /* Allow items to wrap */
+    background: hsl(319, 51%, 28%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  }
+  
+  
+  .staff-card img {
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px; /* Increase image size */
+    height: auto;
+  }
+  
+  /* Adjustments for text and image containers */
+  .staff-card h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: #fff;
+  }
+
+
+  
+  .staff-card p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #fff;
+  }
+  
+  /* Image and text position alternation */
+  .staff-card:nth-child(odd) {
+    flex-direction: row; 
+  }
+  
+  .staff-card:nth-child(even) {
+    flex-direction: row-reverse; /* Image on the right, text on the left */
+  }
+  
+  /* Image container is larger than text container */
+  .staff-card > img {
+    flex: 2; /* Image takes twice the space of the text container */
+  }
+  
+  .staff-card > div {
+    flex: 1; /* Text takes half the space of the image container */
+  }
+  
+  /* Small screen layout (max-width: 768px) */
+  @media (max-width: 768px) {
+    .staff-card {
+      flex-direction: column; /* Stack image and text vertically on smaller screens */
+      gap: 20px;
+      padding: 15px;
+    }
+  
+    .staff-card img {
+      width: 100%; /* Image should scale down to fit container */
+      max-width: 100%; /* Ensure image doesn't overflow */
+      height: auto; /* Keep the image's aspect ratio */
+    }
+  
+    .staff-card > div {
+      width: 100%; /* Make text container take full width */
+      padding: 10px;
+    }
+  
+    .staff-container h2 {
+      font-size: 1.75rem;
+      margin-bottom: 20px;
+    }
+  
+    .staff-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 5px; 
+      text-decoration: underline;
+    }
+  
+    .staff-card p {
+      font-size: 1.2rem; 
+      /* Adjust paragraph font size for readability */
+    }
+  }
+  
+  /* Very small screens (max-width: 480px) */
+  @media (max-width: 480px) {
+    .staff-container {
+      padding: 10px;
+    }
+  
+    .staff-card h3 {
+      font-size: 1.2rem;
+    }
+  
+    .staff-card p {
+      font-size: 0.85rem;
+    }
+  }
+  

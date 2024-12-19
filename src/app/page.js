@@ -70,9 +70,9 @@ export default function Home() {
            <h3>How to find us:</h3>
           <address>
             <p>
-              <span>Cantor College</span><br />
-              <span>Main Street</span><br />
-              <span>Sheffield</span><br />
+              <span>Cantor College</span><br/>
+              <span>Main Street</span><br/>
+              <span>Sheffield</span><br/>
               <span>SC4 2BB</span>
             </p>
             <p>

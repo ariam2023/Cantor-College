@@ -187,18 +187,19 @@
 }
 .address-container{
   position: relative;
-  left: 30%;
+  left: 50%;
 }
 
 .address-container  address {
   font-style: normal;  
   color: #fff;
-  
+  border: 2px solid black;
 }
 
 .address-container span{
   display: block;
   margin-bottom: 5px;
+  
 }
 
 
